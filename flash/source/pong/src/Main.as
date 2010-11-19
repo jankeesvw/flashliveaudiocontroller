@@ -1,5 +1,6 @@
 package  
 {
+	import flash.system.fscommand;
 	import flash.ui.Mouse;
 	import flash.display.Loader;
 	import flash.display.Sprite;
@@ -20,6 +21,9 @@ package
 		public function Main()
 		{
 			Mouse.hide();
+			
+			//oldschool fullscreen shizzle
+			fscommand("fullscreen","true");
 			
 			_game = GAME_PONG;
 			_loader = new Loader();
